@@ -12,3 +12,5 @@ data_stats.Y <- Y
 data_stats.pca <- pca(data_stats.X, ncomp = 3, center = TRUE, scale = TRUE)
 
 data_stats.splsda <- splsda(data_stats.X,data_stats.Y, ncomp = 3, keepX = c(50,50,50))
+
+data_stats.plsda <- splsda(data_stats.X, data_stats.Y, ncomp = 3)
