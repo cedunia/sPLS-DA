@@ -14,6 +14,7 @@ data_figs.col <- ifelse(data_figs.col == 1, cols[1],
                                       cols[4])))
 data_figs <- data_stats.pca
 
+## MAKE FILGURES ##
 pdf('./figures/pca.pdf')
 plotIndiv(data_figs, col = data_figs.col, ind.names = FALSE, pch = 16)
 dev.off()
