@@ -5,3 +5,4 @@ load('./data/srbct.rda')
 
 ## CLEAN DATA ##
 X <- srbct$gene
+Y <- srbct$class
