@@ -44,3 +44,6 @@ dev.off()
 plotVar(result, comp = 1:3, var.names  = list(srbct$gene.name[, 1]),
         style='3d',axes.box = 'axes')
 
+pdf('./figures/splsda_error.pdf')
+plot(error, type = "l")
+dev.off()
